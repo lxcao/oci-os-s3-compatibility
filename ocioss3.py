@@ -17,7 +17,6 @@ region_name="ap-seoul-1",
 endpoint_url="https://hktwlab.compat.objectstorage.ap-seoul-1.oraclecloud.com"
 )
 
-
  
 # oci.identity.IdentityClient.update_user(
 #     user_id="ocid1.user.oc1..aaaaaaaafawx54qczcs5w6dtpfzjlcbewrczky3vixnds5tcsd5vlvfl3via",
