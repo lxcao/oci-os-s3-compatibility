@@ -12,3 +12,10 @@ url = s3.generate_presigned_url(
         Params = {'Bucket': 'bucket-20220501-1555', 'Key': 'ds/ads/dataset/iris.csv'},
         ExpiresIn = 3600)
 print('URL: ' + url)
+
+post = s3.generate_presigned_post('bucket-20220501-1555', 
+                                  'ds/ads/dataset/iris.csv', 
+                                  Fields=None, 
+                                  Conditions=None, 
+                                  ExpiresIn=3600)
+print('POST URL: ' + post['url'])
