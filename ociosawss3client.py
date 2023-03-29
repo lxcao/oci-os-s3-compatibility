@@ -30,8 +30,6 @@ from io import StringIO
 s3_data = StringIO(s3.get_object(Bucket='bucket-20220722',Key='wholesaletradesurveymar2022quarter6')['Body'].read().decode('utf-8'))
 data = pandas.read_csv(s3_data)
 print(data.head())
-print()
-
 
 
 
